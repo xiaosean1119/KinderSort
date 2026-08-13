@@ -54,6 +54,7 @@ Double-click the **KinderSort.exe** file to launch the app.
 
 You will see three folder selector rows at the top.
 
+
 ---
 
 ### Step 2 — Select Your Reference Photos Folder
@@ -65,6 +66,7 @@ Navigate to your folder of student reference photos and click **Select Folder**.
 ![Reference folder selected](guidebook_assets/02_reference_selected.png)
 
 The path to your folder will appear in the box.
+
 
 ---
 
@@ -104,6 +106,8 @@ KinderSort will begin processing your photos. You will see:
 
 You can click **Cancel** at any time to stop — photos processed so far will be saved.
 
+![Sorting in progress](guidebook_assets/05_sorting_in_progress.png)
+
 ---
 
 ### Step 6 — Review the Results
@@ -123,6 +127,8 @@ The summary shows:
 ## Understanding Your Output Folder
 
 After sorting, your Output folder will look like this:
+
+![Sorting complete](guidebook_assets/06_sorting_complete.png)
 
 ```
 Output/
