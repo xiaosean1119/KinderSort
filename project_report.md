@@ -33,3 +33,23 @@ Many kindergartens operate using low-specification computers. Therefore, AI solu
 ### Incorrect Classification Risks
 
 Incorrect face recognition may lead to privacy concerns and reduce trust in the system. Teachers may need to manually verify results before distributing photos.
+
+## Professional Ethics and ACM Code
+
+The development of KinderSort Lite follows several principles from the ACM Code of Ethics.
+
+### Avoid Harm
+
+Developers should reduce the risk of incorrect image classification because mistakes may affect students, teachers, and parents.
+
+### Respect Privacy
+
+Children's photos contain personal information and should be protected from unauthorized access.
+
+### Be Honest and Transparent
+
+Users should understand the limitations of the system. The software may not achieve 100% accuracy in every situation.
+
+### Act in the Public Interest
+
+The system should improve teacher productivity while ensuring privacy, security, and fairness for all users.
