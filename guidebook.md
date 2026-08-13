@@ -195,6 +195,12 @@ which event a photo came from.
 4. **Re-run with a higher tolerance** if you're missing matches — ask your IT support to adjust the `DISTANCE_THRESHOLD` in `sorter.py` from `0.5` to `0.6`
 5. **Keep events in subfolders** — KinderSort only reads photos inside named subfolders of the Events folder
 
+### Performance and Low-Resource Processing
+
+KinderSort is optimized for CPU-only processing. The face recognition system uses HOG-based face detection and `num_jitters=1` to reduce computational cost and improve processing speed.
+
+The application works offline and does not require a GPU or cloud-based AI service.
+
 ---
 
 *KinderSort — Student Photo Organiser | Runs fully offline, no internet required*
