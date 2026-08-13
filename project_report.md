@@ -71,3 +71,11 @@ This project helped us understand that AI development is not only about improvin
 We also learned that low-resource optimization is necessary because many schools use older computers with limited hardware capabilities. By using CPU-only processing and lightweight AI methods, the system remains practical and accessible.
 
 Overall, this project improved our understanding of both artificial intelligence and computing ethics.
+
+## Stakeholder Analysis
+
+The main stakeholders of KinderSort Lite include teachers, students, parents, and school management.
+
+Teachers benefit from reduced manual sorting work and improved productivity. Students and parents benefit from faster access to organized event photos. However, incorrect image classification may create privacy concerns if photos are placed in the wrong folder.
+
+Therefore, all stakeholders should be considered when designing and deploying AI systems in educational environments.
