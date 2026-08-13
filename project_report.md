@@ -79,3 +79,9 @@ The main stakeholders of KinderSort Lite include teachers, students, parents, an
 Teachers benefit from reduced manual sorting work and improved productivity. Students and parents benefit from faster access to organized event photos. However, incorrect image classification may create privacy concerns if photos are placed in the wrong folder.
 
 Therefore, all stakeholders should be considered when designing and deploying AI systems in educational environments.
+
+## Low Resource Environment Considerations
+
+KinderSort Lite is designed for schools with limited hardware resources. By using CPU-only processing and lightweight face recognition techniques, the system can operate without requiring expensive GPUs.
+
+This helps improve accessibility and allows more educational institutions to benefit from AI technology regardless of budget limitations.
