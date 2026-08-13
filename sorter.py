@@ -77,7 +77,6 @@ class PhotoSorter:
         reference_images = sorted(
             p for p in self.reference_folder.iterdir() if is_image_file(p)
         )
-
         if not reference_images:
             self.logger.warning("No reference images found in %s", self.reference_folder)
             return no_face_names
@@ -89,9 +88,12 @@ class PhotoSorter:
                 progress_callback(current, total, student_name)
             try:
                 image = face_recognition.load_image_file(str(ref_path))
-                locations = face_recognition.face_locations(image, model="cnn")
+                locations = face_recognition.face_locations(image, model="hog")
                 encodings = face_recognition.face_encodings(
-                    image, known_face_locations=locations, num_jitters=10, model="large"
+                    image,
+                    known_face_locations=locations,
+                    num_jitters=1,
+                    model="large"
                 )
 
                 if not encodings:
@@ -108,7 +110,6 @@ class PhotoSorter:
                         "Multiple faces in reference photo for %s — using first face only",
                         student_name,
                     )
-
                 self._student_encodings[student_name] = encodings[0]
                 self.logger.info("Loaded reference for %s", student_name)
 
