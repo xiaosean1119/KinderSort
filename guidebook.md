@@ -201,6 +201,17 @@ KinderSort is optimized for CPU-only processing. The face recognition system use
 
 The application works offline and does not require a GPU or cloud-based AI service.
 
+### Test Dataset
+
+A small test dataset was used to verify the photo sorting function.
+
+- Event photos tested: 3
+- Identifiable faces: 2
+- Output folders: 2
+- Multi-face photos: 1
+- Test subjects: Cristiano Ronaldo and IShowSpeed
+
+The multi-face photo was processed for both detected subjects, demonstrating that one event photo can be assigned to multiple relevant student folders.
 ---
 
 *KinderSort — Student Photo Organiser | Runs fully offline, no internet required*
