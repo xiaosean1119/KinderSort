@@ -53,3 +53,21 @@ Users should understand the limitations of the system. The software may not achi
 ### Act in the Public Interest
 
 The system should improve teacher productivity while ensuring privacy, security, and fairness for all users.
+
+## Recommendations
+
+Several improvements can be implemented in future versions of KinderSort Lite.
+
+1. Add stronger encryption to protect student photos.
+2. Implement user authentication and access control.
+3. Conduct regular bias testing to improve fairness.
+4. Improve accuracy using larger datasets.
+5. Add automatic error reporting for incorrect classifications.
+
+## Reflection
+
+This project helped us understand that AI development is not only about improving accuracy. Privacy, fairness, accessibility, and professional responsibility are equally important.
+
+We also learned that low-resource optimization is necessary because many schools use older computers with limited hardware capabilities. By using CPU-only processing and lightweight AI methods, the system remains practical and accessible.
+
+Overall, this project improved our understanding of both artificial intelligence and computing ethics.
