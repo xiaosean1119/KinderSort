@@ -180,7 +180,7 @@ class PhotoSorter:
                 if not face_locations:
                     face_locations = face_recognition.face_locations(rgb_image, model="cnn")  # CNN fallback
                 face_encodings = face_recognition.face_encodings(
-                    rgb_image, face_locations, num_jitters=3, model="large"
+                    rgb_image, face_locations, num_jitters=1, model="large"
                 )
             except Exception as exc:  # noqa: BLE001
                 self.logger.error("Face detection failed for %s: %s", image_path.name, exc)
