@@ -1,18 +1,34 @@
 # -*- mode: python ; coding: utf-8 -*-
+
 from PyInstaller.utils.hooks import collect_all
 
-datas, binaries, hiddenimports = [], [], []
+datas = []
+binaries = []
+hiddenimports = []
 
-for pkg in ('face_recognition', 'face_recognition_models', 'dlib'):
+# Collect Python packages
+for pkg in ("face_recognition", "face_recognition_models", "dlib"):
     d, b, h = collect_all(pkg)
     datas += d
     binaries += b
     hiddenimports += h
 
+# Explicitly include face_recognition_models model files
+model_dir = r"C:\xampp\htdocs\tutorial2\KinderSort\.venv\Lib\site-packages\face_recognition_models\models"
+
+datas += [
+    (
+        model_dir,
+        "face_recognition_models/models",
+    )
+]
+
 
 a = Analysis(
-    ['main.py'],
-    pathex=[],
+    ["main.py"],
+    pathex=[
+        r"C:\xampp\htdocs\tutorial2\KinderSort"
+    ],
     binaries=binaries,
     datas=datas,
     hiddenimports=hiddenimports,
@@ -23,6 +39,7 @@ a = Analysis(
     noarchive=False,
     optimize=0,
 )
+
 pyz = PYZ(a.pure)
 
 exe = EXE(
@@ -31,7 +48,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='KinderSort',
+    name="KinderSort",
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
